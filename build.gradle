@@ -1,0 +1,12 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    compile 'rhino:js:1.7R2',
+            'net.arnx:jsonic:1.3.0'
+}
+
