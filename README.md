@@ -1,8 +1,6 @@
 # サーバサイドでGoogle Code Prettifyを適用する
 
-* [RhinoでjQuery](http://ka-ka-xyz.hatenablog.com/entry/20120411/1334160190)
-
-の記事を参考に、サーバサイドでgoogle-code-prettifyを適用するための実験。
+[RhinoでjQuery](http://ka-ka-xyz.hatenablog.com/entry/20120411/1334160190)の記事を参考に、サーバサイドでgoogle-code-prettifyを適用するための実験。
 
 # LICENSE
 
