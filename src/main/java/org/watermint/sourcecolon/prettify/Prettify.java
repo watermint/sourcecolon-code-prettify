@@ -146,9 +146,7 @@ public class Prettify {
      * @throws IOException
      */
     private void loadScript(Context context, Scriptable scope, String name) throws IOException {
-        String path = "src/main/resources";
-
-        try (Reader reader = new FileReader(new File(path + "/" + name))) {
+        try (Reader reader = new InputStreamReader(Prettify.class.getResourceAsStream("/" + name))) {
             Script script = context.compileReader(reader, name, 1, null);
             script.exec(context, scope);
         }

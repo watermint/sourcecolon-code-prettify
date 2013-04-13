@@ -1,19 +1,21 @@
 function sourcecolon(source){
   var body = document.documentElement.childNodes[1];
-  var tag = document.createElement("xmp");
+  var container = document.createElement("div");
+  var xmp = document.createElement("xmp");
   if (source.lang) {
-    tag.className = "prettyprint lang-" + source.lang;
+    xmp.className = "prettyprint lang-" + source.lang;
   } else {
-    tag.className = "prettyprint";
+    xmp.className = "prettyprint";
   }
-  tag.innerHTML = source.code;
-  body.appendChild(tag);
+  xmp.innerHTML = source.code;
+  container.appendChild(xmp)
+  body.appendChild(container);
 
   prettyPrint();
 
-  var printed = document.innerHTML;
+  var printed = container.innerHTML;
 
-  body.removeChild(tag);
+  body.removeChild(container);
 
   return printed;
 }
