@@ -1,6 +1,16 @@
-# サーバサイドでGoogle Code Prettifyを適用する
+# Google Code Prettify Wrapper
 
-[RhinoでjQuery](http://ka-ka-xyz.hatenablog.com/entry/20120411/1334160190)の記事を参考に、サーバサイドでgoogle-code-prettifyを適用するための実験。
+Wrapper module for Google Code Prettify.
+
+# References
+
+* [RhinoでjQuery](http://ka-ka-xyz.hatenablog.com/entry/20120411/1334160190)
+
+# Libraries
+
+* [google-code-prettify](https://code.google.com/p/google-code-prettify/)
+* [Rhino](https://developer.mozilla.org/docs/Rhino)
+* [JSONIC](http://jsonic.sourceforge.jp/)
 
 # LICENSE
 

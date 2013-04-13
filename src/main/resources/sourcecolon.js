@@ -1,9 +1,11 @@
-var document = window.document;
-
 function sourcecolon(source){
   var body = document.documentElement.childNodes[1];
-  var tag = document.createElement("code");
-  tag.className = "prettyprint";
+  var tag = document.createElement("xmp");
+  if (source.lang) {
+    tag.className = "prettyprint lang-" + source.lang;
+  } else {
+    tag.className = "prettyprint";
+  }
   tag.innerHTML = source.code;
   body.appendChild(tag);
 
