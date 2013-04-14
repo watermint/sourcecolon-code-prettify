@@ -1,6 +1,22 @@
 # Google Code Prettify Wrapper
 
-Wrapper module for Google Code Prettify.
+Wrapper module for Google Code Prettify. Google Code Prettify runs on JavaScript with browser environment. sourcecolon-code-prettify provides Java API without any browser dependency. sourcecolon-code-prettify use Rhino with Envjs to simulate browser environment.
+
+# Synopsis
+
+	import org.watermint.sourcecolon.prettify.*;
+
+	class Hello {
+		public static void main(String... args) throws PrettifyException {
+       			Prettify p = new Prettify();
+
+			System.out.println(p.prettify("puts 'Hello, World'"));
+		}
+	}
+
+## Output
+
+	<xmp class="prettyprint prettyprinted"><span class="pln">puts </span><span class="str">&apos;Hello, World&apos;</span></xmp>
 
 # References
 
