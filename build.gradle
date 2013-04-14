@@ -1,4 +1,6 @@
 apply plugin: 'java'
+apply plugin: 'maven'
+
 
 repositories {
     mavenCentral()
@@ -14,5 +16,26 @@ jar {
     manifest {
         attributes('Main-Class': 'org.watermint.sourcecolon.prettify.Prettify')
     }
-    from configurations.runtime.collect { it.isDirectory() ? it : zipTree(it) }
 }
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            pom.groupId = 'org.watermint'
+            pom.artifactId = 'sourcecolon-code-prettify'
+            pom.version = 'r1'
+            pom.project {
+                licenses {
+                    license {
+                        name "The MIT License (MIT)"
+                        url "http://opensource.org/licenses/MIT"
+                        distribution "repo"
+                    }
+                }
+            }
+
+            repository(url: uri('build/mvn'))
+        }
+    }
+}
+

@@ -24,10 +24,10 @@ Wrapper module for Google Code Prettify. Google Code Prettify runs on JavaScript
 
 # Libraries
 
-* [google-code-prettify](https://code.google.com/p/google-code-prettify/)
-* [Rhino](https://developer.mozilla.org/docs/Rhino)
-* [JSONIC](http://jsonic.sourceforge.jp/)
-* [Envjs](http://www.envjs.com/)
+* [google-code-prettify](https://code.google.com/p/google-code-prettify/) - Apache License 2.0
+* [Rhino](https://developer.mozilla.org/docs/Rhino) - MPL 1.1/GPL 2.0
+* [JSONIC](http://jsonic.sourceforge.jp/) - Apache License 2.0
+* [Envjs](http://www.envjs.com/) - MIT License/GPL 2.0
 
 # LICENSE
 
