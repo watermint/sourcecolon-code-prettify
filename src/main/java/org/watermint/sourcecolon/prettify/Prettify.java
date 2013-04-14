@@ -19,6 +19,7 @@ public class Prettify {
     private Context context;
     private Scriptable scope;
     private ByteArrayOutputStream log;
+    private Map<String, String> extLangMapping = null;
 
     /**
      * Constructor.
@@ -93,7 +94,7 @@ public class Prettify {
      * @throws IOException
      */
     public String prettify(File file) throws PrettifyException, IOException {
-        return prettify(file, null);
+        return prettify(file, langFromFileName(file));
     }
 
     /**
@@ -118,6 +119,19 @@ public class Prettify {
         }
 
         return prettify(code.toString(), lang);
+    }
+
+    /**
+     * Detect language by file name.
+     *
+     * @param file file.
+     * @return language name or null. null when lang not found for the extension.
+     */
+    public String langFromFileName(File file) {
+        int dot = file.getName().lastIndexOf(".");
+
+        // Just use extension for detect language this time.
+        return dot > 0 ? file.getName().substring(dot + 1).toLowerCase() : null;
     }
 
     /**

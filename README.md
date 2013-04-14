@@ -11,6 +11,7 @@ Wrapper module for Google Code Prettify.
 * [google-code-prettify](https://code.google.com/p/google-code-prettify/)
 * [Rhino](https://developer.mozilla.org/docs/Rhino)
 * [JSONIC](http://jsonic.sourceforge.jp/)
+* [Envjs](http://www.envjs.com/)
 
 # LICENSE
 
