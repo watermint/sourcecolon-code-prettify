@@ -29,7 +29,7 @@ Wrapper module for Google Code Prettify. Google Code Prettify runs on JavaScript
 * [google-code-prettify](https://code.google.com/p/google-code-prettify/), Apache License 2.0
 * [Envjs](http://www.envjs.com/), MIT License/GPL 2.0
 
-## Libraries is not included in this distribution
+## Libraries are not included in this distribution
 
 Libraries below are marked dependencies as maven POM configuration.
 
